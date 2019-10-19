@@ -35,7 +35,7 @@ def webaccess():
         #lines=(line.strip() for line in text.splitlines())
         temp=text.split()
         #print(temp)
-        for x in word:
+        for url in word:
             count=0
             for y in temp:
                 if y not in density:

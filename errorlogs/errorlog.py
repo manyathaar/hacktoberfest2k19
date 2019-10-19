@@ -4,7 +4,7 @@ def readfile():
     fo.close()
     str="System.err:"
     words=[]
-    st=[]
+    s=[]
     li=[]
     s=[]
     comp=[]
@@ -22,19 +22,19 @@ def readfile():
     for i in words:
         pid=i[2]
         tid=i[3]
-        print("pid=",pid, )
-        print("tid=",tid, ) 
-        print("i[6]=",i[6], )
+        print("pid=",pid)
+        print("tid=",tid) 
+        print("i[6]=",i[6])
         if "Exception" in i[6]:
             ex=i[6]
-            print("ex=",ex, )
+            print("ex=",ex)
             del li[:]
             if len(s)!=0:
                 print("\n")
                 print("Stack trace")
                 for x in s:
                     for k in x:
-                        print(k, )
+                        print(k)
                     print()
                 print()
             print("\n")

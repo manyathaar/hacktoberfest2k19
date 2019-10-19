@@ -1,7 +1,6 @@
 n=int(input("Enter an integer:"))
 print("Factors are:")
 i=0
-for(i=0;i<n;i++)
 while(i<=n):
     k=0
     if(n%i==0):
@@ -12,4 +11,4 @@ while(i<=n):
             j=j+1
         if(k==2):
             print(i)
-    i=i+1
+        i=i+1
